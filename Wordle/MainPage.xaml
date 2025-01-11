@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wordle.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,40,30,0"
+            Spacing="25">
+            <VerticalStackLayout 
+                VerticalOptions="Center"
+                Spacing="5">
+                <Image
+                    Source="wordleico.png"
+                    HeightRequest="185"
+                    Aspect="AspectFit"
+                    SemanticProperties.Description="Icon taken from some other wordle app" />
+
+                <Label
+                    Text="Wordle knockoff!"
+                    Style="{StaticResource Headline}"
+                    SemanticProperties.HeadingLevel="Level1" />
+            </VerticalStackLayout>
+            <VerticalStackLayout 
+                HorizontalOptions="Center"
+                Spacing="5">
+                <Label
+                    Text="Choose the word size"
+                    Style="{StaticResource SubSubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2"/>
+                
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Button
+                        Text="-"
+                        Clicked="OnDecrementClicked" />
+                    <Entry
+                        x:Name="WordLengthEntry"
+                        Text="5"
+                        Keyboard="Numeric"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="50" />
+                    <Button
+                        Text="+"
+                        Clicked="OnIncrementClicked" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
