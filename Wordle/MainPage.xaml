@@ -24,25 +24,10 @@
             <VerticalStackLayout 
                 HorizontalOptions="Center"
                 Spacing="5">
-                <Label
-                    Text="Choose the word size"
-                    Style="{StaticResource SubSubHeadline}"
-                    SemanticProperties.HeadingLevel="Level2"/>
-                
-                <HorizontalStackLayout HorizontalOptions="Center">
-                    <Button
-                        Text="-"
-                        Clicked="OnDecrementClicked" />
-                    <Entry
-                        x:Name="WordLengthEntry"
-                        Text="5"
-                        Keyboard="Numeric"
-                        HorizontalTextAlignment="Center"
-                        WidthRequest="50" />
-                    <Button
-                        Text="+"
-                        Clicked="OnIncrementClicked" />
-                </HorizontalStackLayout>
+                <Button
+                    Margin="0, 10, 0, 0"
+                    Text="Solve Wordle"
+                    Clicked="OnStartClicked" />
             </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

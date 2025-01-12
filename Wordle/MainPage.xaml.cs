@@ -6,20 +6,9 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
     }
-
-    private void OnDecrementClicked(object sender, EventArgs e)
+    
+    private void OnStartClicked(object sender, EventArgs e)
     {
-        if (int.TryParse(WordLengthEntry.Text, out int wordLength) && wordLength > 4)
-        {
-            WordLengthEntry.Text = (wordLength - 1).ToString();
-        }
-    }
-
-    private void OnIncrementClicked(object sender, EventArgs e)
-    {
-        if (int.TryParse(WordLengthEntry.Text, out int wordLength) && wordLength < 7)
-        {
-            WordLengthEntry.Text = (wordLength + 1).ToString();
-        }
+        Navigation.PushAsync(new GamePage());
     }
 }

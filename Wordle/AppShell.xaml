@@ -8,6 +8,7 @@
     Title="Wordle">
 
     <ShellContent
+        Title="Game"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wordle.GamePage">
+    
+    <VerticalStackLayout Padding="30,40,30,0">
+        <Label x:Name="WordSizeLabel"
+            Text="Word Size"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        
+        <Label x:Name="RandomWord"
+               Text="Word Size"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+    </VerticalStackLayout>
+    
+</ContentPage>
